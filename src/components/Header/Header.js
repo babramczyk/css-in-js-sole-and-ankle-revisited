@@ -32,9 +32,11 @@ const Header = () => {
         </Nav>
         <Side />
 
-        <Icon id="shopping-bag" strokeWidth={2} />
-        <Icon id="search" strokeWidth={2} />
-        <Icon id="menu" strokeWidth={2} />
+        <TruncatedNav>
+          <Icon id="shopping-bag" strokeWidth={2} />
+          <Icon id="search" strokeWidth={2} />
+          <Icon id="menu" strokeWidth={2} />
+        </TruncatedNav>
       </MainHeader>
 
       <MobileMenu
@@ -76,6 +78,15 @@ const NavLink = styled.a`
 
   &:first-of-type {
     color: ${COLORS.secondary};
+  }
+`;
+
+const TruncatedNav = styled.div`
+  display: none;
+  gap: clamp(16px, 7vw - 1.5rem, 40px);
+
+  ${QUERIES.tabletAndBelow} {
+    display: flex;
   }
 `;
 
