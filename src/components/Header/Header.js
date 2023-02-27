@@ -35,7 +35,9 @@ const Header = () => {
         <TruncatedNav>
           <Icon id="shopping-bag" strokeWidth={2} />
           <Icon id="search" strokeWidth={2} />
-          <Icon id="menu" strokeWidth={2} />
+          <MenuButton onClick={() => setShowMobileMenu(true)}>
+            <Icon id="menu" strokeWidth={2} />
+          </MenuButton>
         </TruncatedNav>
       </MainHeader>
 
@@ -88,6 +90,13 @@ const TruncatedNav = styled.div`
   ${QUERIES.tabletAndBelow} {
     display: flex;
   }
+`;
+
+const MenuButton = styled.button`
+  /* Reset default button styles */
+  border: none;
+  background: transparent;
+  padding: 0;
 `;
 
 export default Header;
