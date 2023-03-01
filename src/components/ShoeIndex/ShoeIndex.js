@@ -19,6 +19,7 @@ const ShoeIndex = ({ sortId, setSortId }) => {
             label="Sort"
             value={sortId}
             onChange={(ev) => setSortId(ev.target.value)}
+            css={{ [QUERIES.phone]: { display: "none" } }}
           >
             <option value="newest">Newest Releases</option>
             <option value="price">Price</option>
