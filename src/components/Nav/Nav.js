@@ -19,7 +19,7 @@ export const Nav = ({ className }) => {
 
 const Wrapper = styled.nav`
   display: flex;
-  gap: clamp(16px, 6vw - 2.5rem, 48px);
+  gap: clamp(1rem, 6vw - 2.5rem, 3rem);
 `;
 
 const Link = styled.a`
