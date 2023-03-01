@@ -11,13 +11,15 @@ export const Nav = ({ className }) => {
       <Link href="/women">Women</Link>
       <Link href="/kids">Kids</Link>
       <Link href="/collections">Collections</Link>
+      <Link href="/collections">Collections</Link>
+      <Link href="/collections">Collections</Link>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(16px, 6vw - 2.5rem, 48px);
 `;
 
 const Link = styled.a`

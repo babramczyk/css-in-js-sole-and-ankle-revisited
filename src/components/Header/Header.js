@@ -53,6 +53,8 @@ const MainHeader = styled.div`
 
 const HeaderNav = styled(Nav)`
   margin: 0px 48px;
+  overflow: auto;
+  margin-right: -32px;
 
   ${QUERIES.tabletAndBelow} {
     display: none !important;
