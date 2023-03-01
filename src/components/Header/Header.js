@@ -55,7 +55,7 @@ const HeaderNav = styled(Nav)`
   margin: 0px 48px;
 
   ${QUERIES.tabletAndBelow} {
-    display: none;
+    display: none !important;
   }
 `;
 
